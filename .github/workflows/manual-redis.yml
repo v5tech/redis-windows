@@ -10,8 +10,8 @@ on:
         type: string
       make_latest:
         description: 'Mark as Latest Release'
-        default: false
-        type: boolean
+        default: "false"
+        type: string
       prerelease:
         description: 'Mark as Pre-release'
         default: false
