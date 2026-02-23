@@ -8,8 +8,8 @@ on:
         type: string
       make_latest:
         required: false
-        type: string
-        default: "false"
+        type: boolean
+        default: false
       prerelease:
         required: false
         type: boolean
@@ -290,7 +290,7 @@ jobs:
           name: Redis ${{ env.RELEASE_VERSION }} for Windows
           tag_name: ${{ env.RELEASE_VERSION }}
           body_path: release_body.txt
-          make_latest: ${{ inputs.make_latest }}
+          make_latest: "${{ inputs.make_latest }}"
           prerelease: ${{ inputs.prerelease }}
           files: |
             redis-cygwin-builds/${{ env.REDIS_DIST }}-cygwin.zip
