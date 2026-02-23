@@ -8,8 +8,8 @@ on:
         type: string
       make_latest:
         required: false
-        type: boolean
-        default: false
+        type: string
+        default: "false"
       prerelease:
         required: false
         type: boolean
