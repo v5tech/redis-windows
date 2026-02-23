@@ -56,5 +56,5 @@ jobs:
     uses: ./.github/workflows/build-redis.yml
     with:
       release_version: ${{ needs.check-new-version.outputs.redis_version }}
-      make_latest: true
+      make_latest: "true"
     secrets: inherit
